@@ -1,23 +1,34 @@
-/* body styling */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #f0f2f5, #d9e2ec);
     color: #333;
 }
 
 /* Header Section */
 h1 {
+    font-size: 36px;
     color: #2c3e50;
     margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 3px solid #2c3e50;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 hr {
-    width: 80%;
-    border: 1px solid #ccc;
-    margin: 20px auto;
+    width: 60%;
+    border: 2px solid #ccc;
+    margin: 30px auto;
 }
 
 /* Personal Details Section */
@@ -28,20 +39,28 @@ ul {
 
 ul li {
     font-size: 18px;
-    margin: 5px 0;
+    margin: 8px 0;
+    font-weight: bold;
+    color: #555;
 }
 
 /* Profile Picture */
 img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 /* Video Section */
 iframe {
     border-radius: 10px;
+    border: 4px solid #2c3e50;
 }
 
 /* Table Styles */
@@ -49,11 +68,14 @@ table {
     width: 80%;
     margin: auto;
     border-collapse: collapse;
-    background: #fff;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
     text-align: center;
 }
@@ -61,6 +83,16 @@ th, td {
 th {
     background: #2c3e50;
     color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #dfe6e9;
+    transition: background 0.3s ease-in-out;
 }
 
 /* Links */
@@ -68,6 +100,7 @@ a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
@@ -77,16 +110,236 @@ a:hover {
 /* Contact Section */
 p a {
     color: #e74c3c;
+    font-weight: bold;
 }
 
 p a:hover {
     color: #c0392b;
 }
 
+/* Useful Links */
+p a {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+p a:hover {
+    background: #1a252f;
+}
+
 /* Footer */
 footer {
     background: #2c3e50;
     color: white;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Card Design for Sections */
+.section {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+/* Button Styles */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #0056b3;
+}/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f2f5, #d9e2ec);
+    color: #333;
+}
+
+/* Header Section */
+h1 {
+    font-size: 36px;
+    color: #2c3e50;
     margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 3px solid #2c3e50;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 60%;
+    border: 2px solid #ccc;
+    margin: 30px auto;
+}
+
+/* Personal Details Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Profile Picture */
+img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Video Section */
+iframe {
+    border-radius: 10px;
+    border: 4px solid #2c3e50;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #dfe6e9;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Contact Section */
+p a {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #c0392b;
+}
+
+/* Useful Links */
+p a {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+p a:hover {
+    background: #1a252f;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Card Design for Sections */
+.section {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+/* Button Styles */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #0056b3;
 }
