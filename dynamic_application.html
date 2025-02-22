@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Application</title>
+    <style>
+        body {
+            background-color: #743737;
+        }
+    </style>
+    <script src="dynamic_application.js"></script>
+</head>
+<body onload="greeting()">
+    <p id="text">Hello World</p>
+    <button onclick="toggleText()">Change Text</button>
+    
+    
+    <div>
+        <input type="color" id="bgColorPicker" value="#743737">
+        <button onclick="changeBackground()">Change Background</button>
+    </div>
+    
+    <div>
+        <input type="color" id="textColorPicker" value="#000000">
+        <button onclick="changeTextColor()">Change Text Color</button>
+    </div>
+</body>
+</html>
