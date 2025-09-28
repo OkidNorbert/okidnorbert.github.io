@@ -681,6 +681,99 @@ button:focus {
     color: #3498db;
 }
 
+/* Work Experience */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.experience-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #3498db;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.experience-period {
+    color: #6c757d;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.experience-role {
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+/* Certifications */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.cert-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid #3498db;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cert-card h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cert-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cert-card li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f8f9fa;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.cert-card li:before {
+    content: "✓";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
 /* Career Goals */
 .career-goals {
     display: grid;
@@ -869,6 +962,29 @@ body.dark-mode .tab-button.active {
     border-color: #3498db;
 }
 
+body.dark-mode .experience-card,
+body.dark-mode .cert-card {
+    background: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-mode .experience-card h3,
+body.dark-mode .cert-card h3 {
+    color: #3498db;
+}
+
+body.dark-mode .experience-period {
+    color: #cccccc;
+}
+
+body.dark-mode .experience-role {
+    color: #3498db;
+}
+
+body.dark-mode .cert-card li {
+    border-bottom: 1px solid #404040;
+}
+
 /* Responsive Design Updates */
 @media (max-width: 768px) {
     .hero-cta {
@@ -905,6 +1021,11 @@ body.dark-mode .tab-button.active {
         width: 100%;
         max-width: 300px;
         text-align: center;
+    }
+    
+    .experience-grid,
+    .certifications-grid {
+        grid-template-columns: 1fr;
     }
 }
 
