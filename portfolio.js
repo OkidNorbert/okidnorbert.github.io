@@ -136,4 +136,29 @@ document.addEventListener('DOMContentLoaded', () => {
             row.style.transform = 'scale(1)';
         });
     });
+
+    // Semester tab functionality
+    window.showSemester = function(semesterId) {
+        // Hide all semester contents
+        const allContents = document.querySelectorAll('.semester-content');
+        allContents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Remove active class from all tab buttons
+        const allTabs = document.querySelectorAll('.tab-button');
+        allTabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // Show selected semester content
+        const selectedContent = document.getElementById(semesterId);
+        if (selectedContent) {
+            selectedContent.classList.add('active');
+        }
+
+        // Add active class to clicked tab
+        const clickedTab = event.target;
+        clickedTab.classList.add('active');
+    };
 }); 
